@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    width: 248px;
+    margin: 0;
+    padding: 50px;
+    height: 600px;
+    position: sticky;
+}
+
+ul h3#sub {
+    color: #ffffff;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.3636;
+    margin: 0.5em 0 0;
+    opacity: 0.7;
+}
+
+ul h2 {
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+    /* font-size: 22px; */
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+ul li {
+    display: block;
+    padding: 15px;
+    transition: background-color .2s;
+}
+
+ul a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li:hover {
+    background-color: grey;
+}
+
+ul li:active {
+    background-color: dimgrey;
+}
+
+
+
+div#card {
+    background-color: white;
+    position: relative;
+    display: flex;
+    width: 50%;
+    padding: 20px;
+    margin-left: 450px;
+    margin-top: 100px;
+}
+
+div#card {
+    flex: 2;
+}
+
+/* If in mobile screen with maximum width 479px. The iPhone screen resolution is 320x480 px (except iPhone4, 640x960) */
+@media only screen and (max-width: 479px) {
+    div#card {
+        width: 10%;
+    }
+}
