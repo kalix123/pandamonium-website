@@ -9,15 +9,18 @@ html {
     scroll-behavior: smooth;
 }
 
-ul {
+nav ul {
     width: 248px;
     margin: 0;
     padding: 50px;
     height: 600px;
-    position: sticky;
+    margin: 0;
+    display: block;
+    float: left;
+    padding-right: 100px;
 }
 
-ul h3#sub {
+nav ul h3#sub {
     color: #ffffff;
     font-family: "Noto Sans", sans-serif;
     font-size: 14px;
@@ -27,7 +30,7 @@ ul h3#sub {
     opacity: 0.7;
 }
 
-ul h2 {
+nav ul h2 {
     color: white;
     font-family: "Noto Sans", sans-serif;
     /* font-size: 22px; */
@@ -37,44 +40,44 @@ ul h2 {
     margin-bottom: 0;
 }
 
-ul li {
+nav ul li {
     display: block;
     padding: 15px;
     transition: background-color .2s;
 }
 
-ul a {
+nav ul a {
     text-decoration: none;
     color: white;
 }
 
-ul li:hover {
+nav ul li:hover {
     background-color: grey;
 }
 
-ul li:active {
+nav ul li:active {
     background-color: dimgrey;
 }
 
 
 
-div#card {
+div.card {
     background-color: white;
     position: relative;
-    display: flex;
     width: 50%;
     padding: 20px;
-    margin-left: 450px;
     margin-top: 100px;
+    display: inline-block;
 }
 
-div#card {
-    flex: 2;
-}
 
 /* If in mobile screen with maximum width 479px. The iPhone screen resolution is 320x480 px (except iPhone4, 640x960) */
 @media only screen and (max-width: 479px) {
-    div#card {
+    div.card {
         width: 10%;
     }
+}
+
+ul li {
+    padding: 10px;
 }
