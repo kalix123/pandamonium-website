@@ -9,6 +9,10 @@ html {
     scroll-behavior: smooth;
 }
 
+nav {
+    position: fixed;
+}
+
 nav ul {
     width: 248px;
     margin: 0;
@@ -64,12 +68,22 @@ nav ul li:active {
 div.card {
     background-color: white;
     position: relative;
-    width: 50%;
+    overflow: hidden;
+    width: 600px;
     padding: 20px;
     margin-top: 100px;
+    margin-left: 400px;
     display: inline-block;
 }
 
+.card-header {
+    color: black;
+    font-size: 2em;
+}
+
+.card-content {
+    font-size: 1.2em;
+}
 
 /* If in mobile screen with maximum width 479px. The iPhone screen resolution is 320x480 px (except iPhone4, 640x960) */
 @media only screen and (max-width: 479px) {
